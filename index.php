@@ -6,10 +6,10 @@ Coded by flext0r ©  2017
 
 
 */
-$MYSQL_HOST = '';
+$MYSQL_HOST = 'localhost';
 $MYSQL_DB = 'natsFB';
 $MYSQL_PASSWORD = '';
-$MYSQL_USER = '';
+$MYSQL_USER = 'root';
 
 try
 {
@@ -31,7 +31,7 @@ try
 
 class natsFB
 {
-	protected $private;
+	protected $db;
 	
 	public function __construct($connection)
 	{

@@ -4,20 +4,19 @@ natsFB data sender
 
 Coded by flext0r ©  2017
 
-Updated 20.03.2017 | 15:20
+Updated 24.03.2017 | 19:05
 
 
 */
-if(isset($_GET['quiz_id']) == '')
-{
-	header('location: index.php?quiz_id=');
-}
+$fake_quiz = $_GET['quiz_id'];
 $MYSQL_HOST = 'localhost';
 $MYSQL_DB = 'natsFB';
 $MYSQL_PASSWORD = '';
 $MYSQL_USER = 'root';
-
-$fake_quiz = $_GET['quiz_id'];
+if(isset($fake_quiz) == '')
+{
+	header('location: index.php?quiz_id=');
+}
 
 try
 {
